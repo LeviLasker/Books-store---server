@@ -96,13 +96,12 @@ bookstore-rest-api/
 ├── src/
 │   ├── DB/
 │   │   ├── config.js         # קישור וקונפיגורציית ה-Database
-│   │   └── models/           # הגדרת סכמות וטבלאות (Sequelize)
+│   │   ├── models/           # הגדרת סכמות וטבלאות (Sequelize)
+│   │   └── db.sqlite         # קובץ מסד הנתונים (נוצר אוטומטית)
 │   ├── controllers/          # לוגיקה עסקית ועיבוד נתונים
 │   ├── middlewares/          # שכבות הגנה (Auth, Rate Limiter, Validation)
 │   ├── routes/               # ניתוב בקשות ה-HTTP לקונטרולרים
 │   └── app.js                # שרת ה-Express (Entry Point)
-├── Database/
-│   └── db.sqlite             # קובץ מסד הנתונים (נוצר אוטומטית)
 ├── .env.example              # תבנית למשתני הסביבה
 └── package.json              # תלויות וסקריפטים
 ```
